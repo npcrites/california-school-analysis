@@ -33,6 +33,3 @@ b. Find the optimal temporal range (in school years) for analysis
 - models that use dynamic sequencing (like RNN) do not require a set number of school years
 
 c. Create method that merges datasets baesd on keyID/school name
-
-
-c
