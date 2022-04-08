@@ -1,2 +1,38 @@
-$Pre-Processing Documentation
+Pre-Processing Documentation
 
+1. Compile datasets
+
+a. The California Department of Education keeps record of demographic and performance statistics for every school in the state. Because grades 9-12 have both more temporally consistent data and more detailed metrics, this analysis will be limited to California's public high schools.
+
+b. Below is a list of the data reports collected during pre-processing:
+- Absenteeism
+- Accountability (SARC: safety, class size, fiscal expenditure, etc.)
+- Annual Enrollment
+- Assessment
+- CALPADS Unduplicated Pupil Count (UPC)
+- CBEDS School and District Information
+- Discipline
+- English Learners
+- Foster Youth
+- Free or Reduced-Price Meal
+- Graduate and Dropout
+- Homeless Children and Youth
+- Public School and District
+- Post-Secondary Enrollment
+- Stability Rate Data
+- Staff and Course Enrollment
+
+c. Each .txt file first must be converted to a .csv file using pd.to_csv
+
+2. Exploratory Analysis + Process Datasets
+
+a. Create a method that dropss schools such that schools that lack KeyIDs/school name 
+
+b. Find the optimal temporal range (in school years) for analysis
+- models that require a set number of years for each school can use all years recorded in dataset
+- models that use dynamic sequencing (like RNN) do not require a set number of school years
+
+c. Create method that merges datasets baesd on keyID/school name
+
+
+c
